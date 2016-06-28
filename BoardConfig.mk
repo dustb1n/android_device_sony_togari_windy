@@ -16,17 +16,17 @@
 include device/sony/rhine-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
-#-include vendor/sony/togari/BoardConfigVendor.mk
+#-include vendor/sony/togari_windy/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := C6802,C6806,C6833,C6843,togari
+TARGET_OTA_ASSERT_DEVICE := SGP412,togari,togari_windy
 
-TARGET_SPECIFIC_HEADER_PATH += device/sony/togari/include
+TARGET_SPECIFIC_HEADER_PATH += device/sony/togari_windy/include
 
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/togari/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/togari_windy/bluetooth
 
 # Kernel properties
-TARGET_KERNEL_CONFIG := cm_rhine_togari_defconfig
+TARGET_KERNEL_CONFIG := cm_rhine_togari_windy_defconfig
 
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 26

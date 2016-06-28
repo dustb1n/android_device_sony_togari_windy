@@ -19,12 +19,12 @@ TARGET_SCREEN_WIDTH := 1080
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from togari device
-$(call inherit-product, device/sony/togari/togari.mk)
+# Inherit from togari_windy device
+$(call inherit-product, device/sony/togari_windy/togari_windy.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_togari
-PRODUCT_DEVICE := togari
+PRODUCT_NAME := full_togari_windy
+PRODUCT_DEVICE := togari_windy
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
-PRODUCT_MODEL := Xperia Z Ultra
+PRODUCT_MODEL := Xperia Z Ultra (Wi-Fi)
